@@ -1,0 +1,26 @@
+<%- include("../layouts/top.ejs") %>
+
+<% if (products.length > 0){ %>
+
+<h3>Available products</h3>
+<% for(let i=0; i<products.length; i++){ %>
+<div class="card">
+    <img src="<%= products[i].image %>" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4>
+            <b><%= products[i].title %></b>
+        </h4>
+        <p>$<%= products[i].price %></p>
+        <p><%= products[i].description %></p>
+    </div>
+</div>
+<% } %>
+<% }else{ %>
+
+<h3>No Product Available</h3>
+
+<% } %>
+
+</body>
+
+</html>
