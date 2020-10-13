@@ -1,0 +1,90 @@
+<div class="movie-search">
+    <input type="text" [(ngModel)]="movieName" />
+    <button (click)="searchMovie()">Search</button>
+</div>
+<div class="below-section">
+    <div class="movie-details">
+        <h5>Movie Details</h5>
+        <img (click)="addToFav()" src="https://pngimg.com/uploads/love/love_PNG85.png" width="50" height="50" style="position: absolute;
+        right: 39px;
+        top: 15px;">
+        <div>
+            <div style="display:inline-block; width:30%">
+                <img [src]="allData.Poster" />
+            </div>
+            <div style="display:inline-block; width:68%;vertical-align: top;">
+                <table class="zui-table">
+                    <tbody>
+                        <tr>
+                            <td>Title</td>
+                            <td>{{allData.Title}}</td>
+                        </tr>
+                        <tr>
+                            <td>Actors</td>
+                            <td>{{allData.Actors}}</td>
+                        </tr>
+                        <tr>
+                            <td>Awards</td>
+                            <td>{{allData.Awards}}</td>
+                        </tr>
+                        <tr>
+                            <td>Plot</td>
+                            <td>{{allData.Plot}}</td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>{{allData.Country}}</td>
+                        </tr>
+                        <tr>
+                            <td>Director</td>
+                            <td>{{allData.Director}}</td>
+                        </tr>
+                        <tr>
+                            <td>Genre</td>
+                            <td>{{allData.Genre}}</td>
+                        </tr>
+                        <tr>
+                            <td>Production</td>
+                            <td>{{allData.Production}}</td>
+                        </tr>
+                        <tr>
+                            <td>Type</td>
+                            <td>{{allData.Type}}</td>
+                        </tr>
+                        <tr>
+                            <td>Writer</td>
+                            <td>{{allData.Writer}}</td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td>{{allData.Year}}</td>
+                        </tr>
+                        <tr>
+                            <td>imdbRating</td>
+                            <td>{{allData.imdbRating}}</td>
+                        </tr>
+                        <tr>
+                            <td>Released</td>
+                            <td>{{allData.Released}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="search-history">
+        <h5>Search History</h5>
+        <ul *ngFor="let local of searchHistory">
+            <li>{{local}}</li>
+        </ul>
+    </div>
+    <div class="fav-movie">
+        <h5>Favorite Movies</h5>
+        <ul *ngFor="let local of favMovie">
+            <li>{{local}}</li>
+        </ul>
+    </div>
+    <div class="playlist">
+        <h5>Playlist</h5>
+    </div>
+</div>
