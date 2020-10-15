@@ -1,0 +1,21 @@
+<div class="form">
+    <div class="title">
+        <h3 *ngIf="isLogin"><b>Login</b></h3>
+        <h3 *ngIf="!isLogin"><b>Register</b></h3>
+    </div>
+    <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" [(ngModel)]="userName">
+        <div class="user" *ngIf="userError">{{userText}}</div>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" [(ngModel)]="passward">
+        <div class="pass" *ngIf="passError">{{passText}}</div>
+
+        <button class="loginBtn" *ngIf="isLogin" (click)="login()">Login</button>
+        <button class="regBtn" *ngIf="!isLogin" (click)="register()">Register</button>
+        <label *ngIf="isLogin">
+            <span class="register" (click)="registerLink()">Register Now</span>
+        </label>
+    </div>
+</div>

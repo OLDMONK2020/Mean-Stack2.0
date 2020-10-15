@@ -1,0 +1,83 @@
+.movie-search {
+    background: #f1f1f1;
+    padding: 15px;
+    button {
+        width: 85px;
+        height: 35px;
+        background: #19b7c7;
+        color: white;
+        border: none;
+    }
+    input[type="text"] {
+        height: 34px;
+        margin-right: 5px;
+        width: 300px;
+    }
+}
+
+.below-section {
+    .movie-details {
+        position: relative;
+        min-height: 400px;
+        display: block;
+        padding: 15px;
+        border: 2px solid black;
+        margin: 15px;
+    }
+    .search-history {
+        padding: 15px;
+        width: 30%;
+        min-width: 30%;
+        min-height: 400px;
+        display: inline-block;
+        margin-right: 10px;
+        border: 2px solid black;
+        margin: 15px;
+        vertical-align: top;
+    }
+    .fav-movie {
+        padding: 15px;
+        width: 30%;
+        min-width: 30%;
+        min-height: 400px;
+        display: inline-block;
+        margin-right: 10px;
+        border: 2px solid black;
+        margin: 15px;
+        vertical-align: top;
+    }
+    .playlist {
+        padding: 15px;
+        width: 30%;
+        min-width: 30%;
+        min-height: 400px;
+        display: inline-block;
+        border: 2px solid black;
+        margin: 15px;
+        vertical-align: top;
+    }
+}
+
+.zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    width: 100%;
+}
+
+.zui-table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.zui-table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
